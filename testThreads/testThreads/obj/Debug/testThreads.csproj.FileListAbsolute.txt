@@ -1,0 +1,14 @@
+C:\Users\Alisa\Documents\infotecs\testThreads\testThreads\bin\Debug\testThreads.exe.config
+C:\Users\Alisa\Documents\infotecs\testThreads\testThreads\bin\Debug\testThreads.exe
+C:\Users\Alisa\Documents\infotecs\testThreads\testThreads\bin\Debug\testThreads.pdb
+C:\Users\Alisa\Documents\infotecs\testThreads\testThreads\obj\Debug\testThreads.csprojResolveAssemblyReference.cache
+C:\Users\Alisa\Documents\infotecs\testThreads\testThreads\obj\Debug\MainWindow.g.cs
+C:\Users\Alisa\Documents\infotecs\testThreads\testThreads\obj\Debug\App.g.cs
+C:\Users\Alisa\Documents\infotecs\testThreads\testThreads\obj\Debug\testThreads_MarkupCompile.cache
+C:\Users\Alisa\Documents\infotecs\testThreads\testThreads\obj\Debug\testThreads_MarkupCompile.lref
+C:\Users\Alisa\Documents\infotecs\testThreads\testThreads\obj\Debug\MainWindow.baml
+C:\Users\Alisa\Documents\infotecs\testThreads\testThreads\obj\Debug\testThreads.g.resources
+C:\Users\Alisa\Documents\infotecs\testThreads\testThreads\obj\Debug\testThreads.Properties.Resources.resources
+C:\Users\Alisa\Documents\infotecs\testThreads\testThreads\obj\Debug\testThreads.csproj.GenerateResource.Cache
+C:\Users\Alisa\Documents\infotecs\testThreads\testThreads\obj\Debug\testThreads.exe
+C:\Users\Alisa\Documents\infotecs\testThreads\testThreads\obj\Debug\testThreads.pdb

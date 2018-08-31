@@ -1,0 +1,95 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Xml;
+using System.Xml.Linq;
+
+namespace xml
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            XDocument xdoc = new XDocument();
+
+            // создаем первый элемент
+            XElement habbr = new XElement("channel");
+            // создаем атрибут
+            XAttribute habbrAttr = new XAttribute("name", "Habbr");
+            XElement habbrElem = new XElement("link", "https://habr.com/rss/interesting/");
+            // добавляем атрибут и элементы в первый элемент
+            habbr.Add(habbrAttr);
+            habbr.Add(habbrElem);
+            
+            // создаем второй элемент
+            XElement keddr = new XElement("channel");
+            XAttribute keddrAttr = new XAttribute("name", "Keddr.com");
+            XElement keddrElem = new XElement("link", "https://keddr.com/feed/");
+            keddr.Add(keddrAttr);
+            keddr.Add(keddrElem);
+
+            // создаем корневой элемент каналов
+            XElement channels = new XElement("channels");            
+            channels.Add(habbr);
+            channels.Add(keddr);            
+
+            // создаем новый элемент
+            XElement updateFrequency = new XElement("parameter");            
+            XAttribute updateFrequencyAttr = new XAttribute("name", "update_frequency");
+            XElement updateFrequencyElem = new XElement("value", "12");            
+            updateFrequency.Add(updateFrequencyAttr);
+            updateFrequency.Add(updateFrequencyElem);
+
+            // создаем корневой элемент параметров
+            XElement parameters = new XElement("parameters");            
+            parameters.Add(updateFrequency);       
+
+            // создаем главный корневой элемент
+            XElement settings = new XElement("settings");            
+            settings.Add(parameters);
+            settings.Add(channels);            
+            xdoc.Add(settings);
+
+            //сохраняем документ
+            xdoc.Save("settings.xml");
+            ReadXML();
+        }
+
+        static void ReadXML()
+        {
+            XmlDocument xDoc = new XmlDocument();
+            xDoc.Load("settings.xml");
+            // получим корневой элемент
+            XmlElement xRoot = xDoc.DocumentElement;
+            // обход всех узлов в корневом элементе
+            foreach (XmlNode xnode in xRoot)
+            {
+                // получаем атрибут name
+                if (xnode.Attributes.Count > 0)
+                {
+                    XmlNode attr = xnode.Attributes.GetNamedItem("name");
+                    if (attr != null)
+                        Console.WriteLine(attr.Value);
+                }
+                // обходим все дочерние узлы элемента user
+                foreach (XmlNode childnode in xnode.ChildNodes)
+                {
+                    // если узел - company
+                    if (childnode.Name == "company")
+                    {
+                        Console.WriteLine("Компания: {0}", childnode.InnerText);
+                    }
+                    // если узел age
+                    if (childnode.Name == "age")
+                    {
+                        Console.WriteLine("Возраст: {0}", childnode.InnerText);
+                    }
+                }
+                Console.WriteLine();
+            }
+            Console.Read();
+        }
+    }
+}

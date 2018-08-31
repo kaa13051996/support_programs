@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<settings>
+  <parameters>
+    <parametr name="update_frequency">
+      <value>12</value>
+    </parametr>
+  </parameters>
+  <channels>
+    <channel name="Habbr">
+      <link>https://habr.com/rss/interesting/</link>
+    </channel>
+    <channel name="Медуза в курсе">
+      <link>https://meduza.io/rss/podcasts/meduza-v-kurse</link>
+    </channel>
+    <channel name="Keddrcom">
+      <link>https://keddr.com/feed/</link>
+    </channel>
+  </channels>
+</settings>

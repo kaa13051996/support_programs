@@ -1,0 +1,5 @@
+C:\Users\Alisa\Documents\infotecs\timer\timer\bin\Debug\timer.exe.config
+C:\Users\Alisa\Documents\infotecs\timer\timer\bin\Debug\timer.exe
+C:\Users\Alisa\Documents\infotecs\timer\timer\bin\Debug\timer.pdb
+C:\Users\Alisa\Documents\infotecs\timer\timer\obj\Debug\timer.exe
+C:\Users\Alisa\Documents\infotecs\timer\timer\obj\Debug\timer.pdb

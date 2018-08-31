@@ -1,0 +1,6 @@
+C:\Users\Alisa\Documents\infotecs\rssConsole\rssConsole\bin\Debug\rssConsole.exe.config
+C:\Users\Alisa\Documents\infotecs\rssConsole\rssConsole\obj\Debug\rssConsole.csprojResolveAssemblyReference.cache
+C:\Users\Alisa\Documents\infotecs\rssConsole\rssConsole\bin\Debug\rssConsole.exe
+C:\Users\Alisa\Documents\infotecs\rssConsole\rssConsole\bin\Debug\rssConsole.pdb
+C:\Users\Alisa\Documents\infotecs\rssConsole\rssConsole\obj\Debug\rssConsole.exe
+C:\Users\Alisa\Documents\infotecs\rssConsole\rssConsole\obj\Debug\rssConsole.pdb
